@@ -45,9 +45,9 @@ Signature: `BaseCon(base = 62)`
 
 ### BaseCon Class ###
 
-`encode(data)` or `convert(data)`: encode an integer to string
-`decode(data)` or `revert(data)`: decode a string to integer
-`__call__(data, switch = True)`: encode/decode a payload, if switch is set to True, then it encodes; if it is set to False then it decodes.
+- `encode(data)` or `convert(data)`: encode an integer to string
+- `decode(data)` or `revert(data)`: decode a string to integer
+- `__call__(data, switch = True)`: encode/decode a payload, if switch is set to True, then it encodes; if it is set to False then it decodes.
 
 ## Licenses ##
 
