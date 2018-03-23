@@ -6,7 +6,7 @@ __all__ = ('__author__', '__license__', '__version__', 'BaseConvert')
 # package metadata
 __author__ = 'Hansheng Zhao'
 __license__ = 'BSD-2-Clause + MIT'
-__version__ = '1.0.0'
+__version__ = '1.0.1'
 
 
 class BaseCon(object):

@@ -17,18 +17,18 @@ BaseCon是一个单类的库，被用于将数字编码成url安全的字符串�
 ```python
 from basecon import BaseCon
 
-basecon = BaseCon() # default base is 62
-# encode integer
-basecon(100) # '1c', __call__ method
+basecon = BaseCon() # 默认基数为62
+# 编码整数
+basecon(100) # '1c', __call__ 方法
 basecon.encode(100) # '1c'
-basecon.convert(100) # '1c
-# decode string
+basecon.convert(100) # '1c'
+# 解码字符串
 basecon('1c', False) # 100
 basecon.decode('1c') # 100
 basecon.revert('1c') # 100
 
-# change the base
-basecon = BaseCon(16) # change the base to 16
+# 改变基数
+basecon = BaseCon(16) # 把基数变为16
 basecon(128) # '80'
 basecon.encode(128) # '80'
 basecon.convert(128) # '80'
@@ -39,15 +39,15 @@ basecon.revert('80')
 
 ## BaseCon Class API References ##
 
-`BaseCon` class is the only class exported for this library.
+`BaseCon`类是此库暴露的唯一类。
 
-Signature: `BaseCon(base = 62)`
+头: `BaseCon(base = 62)`
 
 ### BaseCon Class ###
 
-- `encode(data)` or `convert(data)`: encode an integer to string
-- `decode(data)` or `revert(data)`: decode a string to integer
-- `__call__(data, switch = True)`: encode/decode a payload, if switch is set to True, then it encodes; if it is set to False then it decodes.
+- `encode(data)` or `convert(data)`: 将整数编码成字符串。
+- `decode(data)` or `revert(data)`: 将字符串解码成整数。
+- `__call__(data, switch = True)`: 编码整数/解码字符串, 如果switch设定为True，将被用来编码整数；如果设定为False将解码字符串.
 
 ## Licenses ##
 

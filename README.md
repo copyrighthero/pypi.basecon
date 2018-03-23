@@ -21,7 +21,7 @@ basecon = BaseCon() # default base is 62
 # encode integer
 basecon(100) # '1c', __call__ method
 basecon.encode(100) # '1c'
-basecon.convert(100) # '1c
+basecon.convert(100) # '1c'
 # decode string
 basecon('1c', False) # 100
 basecon.decode('1c') # 100
